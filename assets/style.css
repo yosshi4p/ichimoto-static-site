@@ -272,3 +272,12 @@ a:hover{ text-decoration: underline; }
   /* スマホではヘッダーナビが詰まりやすいので少しだけ調整 */
   .nav{ flex-wrap: wrap; justify-content: flex-end; }
 }
+
+.title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  text-decoration: underline;
+}
