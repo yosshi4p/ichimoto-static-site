@@ -1,0 +1,67 @@
+<!-- オセロゲームを提案して -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オセロゲーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            gap: 5px;
+            margin-top: 20px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .cell.black {
+            background-color: black;
+        }
+        .cell.white {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>  
+    <h1>オセロゲーム</h1>
+    <div class="board" id="board">
+        <!-- 8x8のセルを生成 -->
+        <script>
+            const board = document.getElementById('board');
+            for (let i = 0; i < 64; i++) {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                cell.addEventListener('click', () => {
+                    // セルがクリックされたときの処理
+                    if (!cell.classList.contains('black') && !cell.classList.contains('white')) {
+                        cell.classList.add('black'); // プレイヤー1の石を置く
+                        // ここで石をひっくり返すロジックを追加することができます
+                    }
+                });
+                board.appendChild(cell);
+            }
+        </script>
+    </div>
+</body>
+</html>
