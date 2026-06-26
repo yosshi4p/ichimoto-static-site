@@ -15,7 +15,9 @@
         <span class="sub">短い物語を、静かに増やしていく。</span>
       </a>
 
-        <!-- ここは後で「プロフィール」ページ等を追加してもOK -->
+      <nav class="nav" aria-label="サイト内メニュー">
+        <a href="#stories">作品一覧</a>
+        <a class="nav-cta" href="#ai-lab">AIアプリ研究所</a>
       </nav>
     </div>
   </header>
@@ -27,17 +29,72 @@
 
       <!-- ✅ 追加：ヒーロー内の目立つCTA -->
       <div class="hero-cta">
-        <a class="btn btn-primary"
-           href="https://www.ichimoto-yoshio.com/"
-           target="_blank"
-           rel="noopener noreferrer">
-          400字小説作成アプリはこちら <span aria-hidden="true">→</span>
-        </a>
-        <p class="hero-note">※別タブで開きます（Render上のアプリへ移動）</p>
+        <div class="hero-cta-actions">
+          <a class="btn btn-primary" href="#ai-lab">
+            AIアプリ研究所を見る <span aria-hidden="true">↓</span>
+          </a>
+          <a class="btn"
+             href="https://www.ichimoto-yoshio.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            400字小説作成アプリはこちら <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <p class="hero-note">※AIアプリ研究所では、自作AIアプリをカード形式で並べていきます。</p>
       </div>
     </section>
 
-    <section class="grid" aria-label="作品リスト">
+    <section id="ai-lab" class="ai-lab" aria-label="AIアプリ研究所">
+      <div class="section-heading">
+        <span class="section-kicker">AI APP LAB</span>
+        <h2>AIアプリ研究所</h2>
+        <p>よっちんが作ったAIアプリを、ここに少しずつ並べていきます。</p>
+      </div>
+
+      <div class="app-grid">
+        <article class="app-card app-card-featured">
+          <div class="app-meta">
+            <span class="badge"><span class="dot"></span>公開中</span>
+            <span class="badge">AI生成</span>
+          </div>
+          <h3>400字小説作成アプリ</h3>
+          <p>題材、ジャンル、主人公などを入力すると、400字前後の短い小説を生成するアプリです。</p>
+          <a class="btn btn-primary"
+             href="https://www.ichimoto-yoshio.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            アプリを開く <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="app-card">
+          <div class="app-meta">
+            <span class="badge">準備中</span>
+            <span class="badge">ゲームAI</span>
+          </div>
+          <h3>将棋アドバイザー</h3>
+          <p>将棋の局面を見ながら、次の一手や考え方を一緒に検討するAIアプリを置く予定です。</p>
+          <span class="btn btn-disabled">準備中</span>
+        </article>
+
+        <article class="app-card">
+          <div class="app-meta">
+            <span class="badge">準備中</span>
+            <span class="badge">生活支援</span>
+          </div>
+          <h3>フォルダ整理AI</h3>
+          <p>パソコン内のファイル整理や分類を手伝うAIエージェントを置く予定です。</p>
+          <span class="btn btn-disabled">準備中</span>
+        </article>
+      </div>
+
+      <!--
+        アプリを追加するときは、上の <article class="app-card"> ... </article> をコピーして、
+        タイトル、説明文、リンク先URLを書き換えればOKです。
+      -->
+    </section>
+
+    <section id="stories" class="grid" aria-label="作品リスト">
       <!-- 作品カード：1本目 -->
       <article class="card">
         <div class="meta">
