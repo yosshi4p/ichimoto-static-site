@@ -20,9 +20,10 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN",
                "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 600px at 20% -10%, rgba(102,217,239,.18), transparent 60%),
-              radial-gradient(900px 500px at 90% 10%, rgba(166,226,46,.14), transparent 55%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(102,217,239,.12), transparent 60%),
+    var(--bg);
+  background-repeat: no-repeat;
   line-height: 1.85;
 }
 
