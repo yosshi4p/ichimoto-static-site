@@ -16,6 +16,7 @@ test("既存デザインとAIアプリ研究所へのリンクを維持する", 
   assert.match(html, /href="\.\/assets\/style\.css"/);
   assert.match(html, /href="\.\/ai-app-lab\.html"/);
   assert.match(html, />\s*AIアプリ研究所\s*</);
+  assert.doesNotMatch(html, /400字小説作成アプリ/);
 });
 
 class FakeElement {
