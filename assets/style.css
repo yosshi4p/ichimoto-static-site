@@ -127,6 +127,42 @@ a:hover{ text-decoration: underline; }
   color: var(--muted);
 }
 
+.featured-novel{
+  margin: 12px 0 4px;
+  padding: 20px;
+  border: 1px solid rgba(166,226,46,.24);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(560px 220px at 100% 0%, rgba(166,226,46,.10), transparent 70%),
+    linear-gradient(180deg, rgba(16,24,38,.92), rgba(16,24,38,.68));
+  box-shadow: var(--shadow);
+}
+
+.featured-novel-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.featured-novel-copy h3{
+  margin: 10px 0 6px;
+  font-size: 22px;
+  letter-spacing: .04em;
+}
+
+.featured-novel-copy p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.featured-novel-link{
+  flex: 0 0 auto;
+}
+
 
 /* ✅ 追加：AIアプリ研究所 */
 .ai-lab{
@@ -380,6 +416,7 @@ a:hover{ text-decoration: underline; }
   /* スマホではヘッダーナビが詰まりやすいので少しだけ調整 */
   .nav{ flex-wrap: wrap; justify-content: flex-end; }
   .hero-cta-actions{ flex-direction: column; align-items: flex-start; }
+  .featured-novel-card{ align-items: flex-start; flex-direction: column; }
   .app-grid{ grid-template-columns: 1fr; }
 }
 
